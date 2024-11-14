@@ -81,3 +81,28 @@ string words = "Hello";
 
 //? Char contains 1 letter
 char singlChar = 'q';
+
+
+//! Functions in C#
+
+static void SayHello()
+{
+    Console.WriteLine("Hello Every Body");
+}
+
+SayHello();
+
+
+//?----------------parameter
+static int DoMath(int x,int y)
+{
+    return x + y;
+}
+
+// DoMath();
+
+// Console.WriteLine(DoMath());
+Console.WriteLine(DoMath(5,10));
+int answer = DoMath(50,60);
+
+Console.WriteLine(answer);
