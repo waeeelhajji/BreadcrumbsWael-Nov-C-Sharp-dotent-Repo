@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "L2BAj74S4eCGaCP7QZ4rBsMywk7JgxETQNh5PauKrw8=",
+  "Source": "FirstWeb",
+  "BasePath": "_content/FirstWeb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FirstWeb\\wwwroot",
+      "Source": "FirstWeb",
+      "ContentRoot": "C:\\Users\\waelh\\OneDrive\\Desktop\\Wael-Nov-C-Sharp-dotent-Repo\\Week2Day2\\FirstWeb\\wwwroot\\",
+      "BasePath": "_content/FirstWeb",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\waelh\\OneDrive\\Desktop\\Wael-Nov-C-Sharp-dotent-Repo\\Week2Day2\\FirstWeb\\wwwroot\\css\\style.css",
+      "SourceId": "FirstWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\waelh\\OneDrive\\Desktop\\Wael-Nov-C-Sharp-dotent-Repo\\Week2Day2\\FirstWeb\\wwwroot\\",
+      "BasePath": "_content/FirstWeb",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\waelh\\OneDrive\\Desktop\\Wael-Nov-C-Sharp-dotent-Repo\\Week2Day2\\FirstWeb\\wwwroot\\images\\cuteCat.jpg",
+      "SourceId": "FirstWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\waelh\\OneDrive\\Desktop\\Wael-Nov-C-Sharp-dotent-Repo\\Week2Day2\\FirstWeb\\wwwroot\\",
+      "BasePath": "_content/FirstWeb",
+      "RelativePath": "images/cuteCat.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cuteCat.jpg"
+    }
+  ]
+}
