@@ -1,0 +1,146 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to our Game Shop</h1>
+    <h2>All games in my database</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Platform</th>
+        </tr>
+        @foreach (Game g in @ViewBag.allGames)
+        {
+            <tr>
+                <td>@g.Title</td>
+                <td>@g.Price</td>
+                <td>@g.Genre</td>
+                <td>@g.Rating</td>
+                <td>@g.Platform</td>
+            </tr>
+        }
+
+    </table>
+    <h2>All games that you can play in all platforms</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Platform</th>
+        </tr>
+        @foreach (Game g in @ViewBag.PlatformsGames)
+        {
+            <tr>
+                <td>@g.Title</td>
+                <td>@g.Price</td>
+                <td>@g.Genre</td>
+                <td>@g.Rating</td>
+                <td>@g.Platform</td>
+            </tr>
+        }
+    </table>
+    <h2>All Top Games order by Prices</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Platform</th>
+        </tr>
+        @foreach (Game g in @ViewBag.topGames)
+        {
+            <tr>
+                <td>@g.Title</td>
+                <td>@g.Price</td>
+                <td>@g.Genre</td>
+                <td>@g.Rating</td>
+                <td>@g.Platform</td>
+            </tr>
+        }
+    </table>
+    <h2>All Top Games order by their Title</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Platform</th>
+        </tr>
+        @foreach (Game g in @ViewBag.titleGamesd)
+        {
+            <tr>
+                <td>@g.Title</td>
+                <td>@g.Price</td>
+                <td>@g.Genre</td>
+                <td>@g.Rating</td>
+                <td>@g.Platform</td>
+            </tr>
+        }
+    </table>
+    <h2>All Top 3 Games order by their Prices</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Platform</th>
+        </tr>
+        @foreach (Game g in @ViewBag.Top3Games)
+        {
+            <tr>
+                <td>@g.Title</td>
+                <td>@g.Price</td>
+                <td>@g.Genre</td>
+                <td>@g.Rating</td>
+                <td>@g.Platform</td>
+            </tr>
+        }
+    </table>
+    <h2>All platforms Games with Rating E</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Platform</th>
+        </tr>
+        @foreach (Game g in @ViewBag.AllPlatformGWithRatingE)
+        {
+            <tr>
+                <td>@g.Title</td>
+                <td>@g.Price</td>
+                <td>@g.Genre</td>
+                <td>@g.Rating</td>
+                <td>@g.Platform</td>
+            </tr>
+        }
+    </table>
+    <h2>Search about God Of War</h2>
+
+    <table class="table table-striped">
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Platform</th>
+        </tr>
+        <tr>
+            <td>@ViewBag.singleGame.Title</td>
+            <td>@ViewBag.singleGame.Price</td>
+            <td>@ViewBag.singleGame.Genre</td>
+            <td>@ViewBag.singleGame.Rating</td>
+            <td>@ViewBag.singleGame.Platform</td>
+        </tr>
+    </table>
+</div>
