@@ -1,0 +1,30 @@
+@model Association
+
+<form asp-action="CreateAssociation" asp-asp-controller="Home" method="post">
+    <div class="form-group">
+        <label asp-for="ActorId"> Actor</label>
+        <select asp-for="ActorId" class="form-control">
+            <option value=null>----Choose an Actor 🦸‍♂️---</option>
+            @foreach (Actor a  in ViewBag.AllActors)
+            {
+                <option value="@a.ActorId">@a.Name</option>
+            }
+        </select>
+        <span asp-validation-for="ActorId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MovieId"> Movie</label>
+        <select asp-for="MovieId" class="form-control">
+            <option value=null>----Choose an Movie 🎥----</option>
+
+            @foreach (Movie m  in ViewBag.AllMovies)
+            {
+                <option value="@m.MovieId">@m.Title</option>
+            }
+        </select>
+        
+        <span asp-validation-for="MovieId" class="text-danger"></span>
+    </div>
+    <input type="submit" value=" Add Role" class="btn btn-primary">
+
+</form>
